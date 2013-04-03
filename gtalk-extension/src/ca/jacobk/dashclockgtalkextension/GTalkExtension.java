@@ -19,13 +19,17 @@ public class GTalkExtension extends DashClockExtension {
         String name = sp.getString(PREF_NAME, getString(R.string.pref_name_default));
 
         // Publish the extension data update.
-        publishUpdate(new ExtensionData()
+        publishUpdate(new GTalkData("Hello", "Hello" + name, 
+        		"GTalk DashClock has begun...",
+        		new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"))));
+        /*publishUpdate(new ExtensionData()
                 .visible(true)
                 .icon(R.drawable.ic_launcher)
                 .status("Hello")
                 .expandedTitle("Hello, " + name + "!")
                 .expandedBody("Thanks for checking out this GTalk extension for DashClock.")
                 .clickIntent(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"))));
+                */
 	}
 	
 	//comment to test git
