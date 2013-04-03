@@ -27,5 +27,7 @@ public class GTalkExtension extends DashClockExtension {
                 .expandedBody("Thanks for checking out this GTalk extension for DashClock.")
                 .clickIntent(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"))));
 	}
+	
+	//comment to test git
 
 }
